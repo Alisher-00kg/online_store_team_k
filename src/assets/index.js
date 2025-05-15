@@ -24,6 +24,8 @@ import Zoom from "./icons/zoom.svg";
 import GreenPlus from "./icons/greenPlus.svg";
 import Plus from "./icons/plus.svg";
 import Minus from "./icons/minus.svg";
+import Beige from "./icons/beige.svg";
+import Blue from "./icons/blue.svg";
 export const icons = {
   ArrowBottom,
   ArrowLeft,
@@ -51,4 +53,6 @@ export const icons = {
   GreenPlus,
   Plus,
   Minus,
+  Beige,
+  Blue,
 };
