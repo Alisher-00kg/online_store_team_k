@@ -34,7 +34,7 @@ import Minus from "./icons/minus.svg?react";
 import Beige from "./icons/beige.svg?react";
 import Blue from "./icons/blue.svg?react";
 
-export const icons = {
+export const Icons = {
   ArrowBottom,
   ArrowLeft,
   ArrowRight,
