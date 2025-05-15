@@ -1,5 +1,5 @@
 import React from "react";
-import { TextField, InputAdornment } from "@mui/material";
+import { TextField, styled } from "@mui/material";
 
 export const Input = ({
   value,
@@ -8,27 +8,27 @@ export const Input = ({
   placeholder = "",
   type = "text",
   icon = null,
+  InputProps,
   ...rest
 }) => {
   return (
-    <TextField
+    <StyledInput
       name={name}
       value={value}
       onChange={onChange}
       placeholder={placeholder}
       type={type}
       fullWidth
+      InputProps={InputProps}
       variant="outlined"
-      InputProps={{
-        startAdornment: icon ? (
-          <InputAdornment position="start">{icon}</InputAdornment>
-        ) : undefined,
-        sx: {
-          borderRadius: "12px",
-          backgroundColor: "#f9f9f9",
-        },
-      }}
       {...rest}
     />
   );
 };
+
+const StyledInput = styled(TextField)(() => ({
+  "& .MuiOutlinedInput-root": {
+    backgroundColor: "#fff",
+    borderRadius: 4,
+  },
+}));
