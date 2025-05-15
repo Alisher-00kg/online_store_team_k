@@ -97,7 +97,18 @@ const variantStyles = {
       background: #dfdada;
     }
   `,
-  
+  filter: css`
+    width: 24px;
+    height: 24px;
+    background: #fafafa;
+    border: none;
+    &:hover {
+      background: #e6e3e3;
+    }
+    &:active {
+      background: #dfdada;
+    }
+  `,
 };
 
 const StyledButton = styled.button`
