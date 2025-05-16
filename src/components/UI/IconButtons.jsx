@@ -1,4 +1,3 @@
-import React from "react";
 import IconButton from "@mui/material/IconButton";
 import { styled } from "@mui/material";
 
@@ -13,11 +12,20 @@ const IconButtons = ({ icon: Icon, children, onClick, style, ...rest }) => {
 
 export default IconButtons;
 
-const StyledButtons = styled(IconButton)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  cursor: pointer;
-`;
+const StyledButtons = styled(IconButton)({
+  "&.MuiButtonBase-root": {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    color: "#000000",
+    svg: {
+      width: "24px",
+      height: "24px",
+    },
+    fontSize: "12px",
+    fontWeight: "400",
+  },
+  "&:hover": {
+    background: "rgba(0,0,0,0.1)",
+  },
+});
