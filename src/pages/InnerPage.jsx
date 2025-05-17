@@ -6,99 +6,84 @@ import Top from "../assets/images/top.png";
 import styled from "styled-components";
 import IconButtons from "../components/UI/IconButtons";
 import { Icons } from "../assets";
+import Buttons from "../components/UI/Buttons";
 
 export const InnerPage = () => {
   return (
-    <div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "5px",
-          marginLeft: "140px",
-          fontFamily: "Arial",
-          fontWeight: "400",
-        }}
-      >
-        <h3>Каталог товаров</h3>
-        <Icons.ArrowRight />
-        <h3 style={{ color: "#30723F" }}>Подробнее про товар</h3>
-      </div>
-      <Container>
-        <StyledColumnSwiper>
-          <Swiper
-            spaceBetween={-40}
-            slidesPerView={4}
-            grabCursor={true}
-            loop={true}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            navigation={true}
-            speed={1200}
-            direction="vertical"
-            modules={[Autoplay, Navigation]}
-          >
-            {[...Array(6)].map((_, i) => (
-              <SwiperSlide key={i}>
-                <img src={Top} alt={`slide-${i}`} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </StyledColumnSwiper>
-        <StyledSwiper>
-          <Swiper
-            spaceBetween={20}
-            slidesPerView={1}
-            grabCursor={true}
-            loop={true}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            navigation={true}
-            speed={1000}
-            modules={[Autoplay, Navigation]}
-          >
-            {[...Array(6)].map((_, i) => (
-              <SwiperSlide key={i}>
-                <img src={Top} alt={`slide-${i}`} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </StyledSwiper>
-        <Conatiner2>
-          <StyledBox>
-            <StyledDivPrice>
-              <h4>
-                Трикотажный топ
-                <br /> в полоску
-              </h4>
-              <span>KGS 4 290,00</span>
-            </StyledDivPrice>
-            <StyledDivBTN>
-              <div>
-                <IconButtons>
-                  <Icons.Blue />
-                </IconButtons>
-                <IconButtons>
-                  <Icons.Beige />
-                </IconButtons>
-              </div>
-              <h5>Светло-синий</h5>
-            </StyledDivBTN>
-          </StyledBox>
-          <StyledSizeDiv>
-            <p>Таблица размеров</p>
+    <Container>
+      <StyledColumnSwiper>
+        <Swiper
+          spaceBetween={-40}
+          slidesPerView={4}
+          grabCursor={true}
+          loop={true}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          navigation={true}
+          speed={1200}
+          direction="vertical"
+          modules={[Autoplay, Navigation]}
+        >
+          {[...Array(6)].map((_, i) => (
+            <SwiperSlide key={i}>
+              <img src={Top} alt={`slide-${i}`} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </StyledColumnSwiper>
+      <StyledSwiper>
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={1}
+          grabCursor={true}
+          loop={true}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          navigation={true}
+          speed={1000}
+          modules={[Autoplay, Navigation]}
+        >
+          {[...Array(6)].map((_, i) => (
+            <SwiperSlide key={i}>
+              <img src={Top} alt={`slide-${i}`} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </StyledSwiper>
+      <Conatiner2>
+        <StyledBox>
+          <StyledDivPrice>
+            <h4>
+              Трикотажный топ
+              <br /> в полоску
+            </h4>
+            <span>KGS 4 290,00</span>
+          </StyledDivPrice>
+          <StyledDivBTN>
             <div>
-              <span>XXS</span>
-              <span>XS</span>
-              <span>S</span>
-              <span>M</span>
-              <span>L</span>
-              <span>XL</span>
+              <IconButtons>
+                <Icons.Blue />
+              </IconButtons>
+              <IconButtons>
+                <Icons.Beige />
+              </IconButtons>
             </div>
-            <p>Товар будет доставлен в течении 10 дней</p>
-          </StyledSizeDiv>
-          <IconButtons>Добавить корзину</IconButtons>
-        </Conatiner2>
-      </Container>
-    </div>
+            <h5>Светло-синий</h5>
+          </StyledDivBTN>
+        </StyledBox>
+        <StyledSizeDiv>
+          <p>Таблица размеров</p>
+          <div>
+            <span>XXS</span>
+            <span>XS</span>
+            <span>S</span>
+            <span>M</span>
+            <span>L</span>
+            <span>XL</span>
+          </div>
+          <p>Товар будет доставлен в течении 10 дней</p>
+        </StyledSizeDiv>
+        <Buttons buttonVariant={'addToBasket'}>Добавить в корзину</Buttons>
+      </Conatiner2>
+    </Container>
   );
 };
 
