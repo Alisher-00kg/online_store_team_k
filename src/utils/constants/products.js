@@ -13,15 +13,17 @@ export const products = [
     price: 5490,
     image: `${ZebraDess}`,
     size: "XXS, XS, S, M, L, XL, XXL",
+    color: ["#C6C5BD", "#EACBEE", "#D8E3F2", "#000000"],
     stock: 2090,
   },
   {
     id: 2,
-    title: "Платье",
+    title: "Двойка",
     info: "NEW NOW",
     price: 5490,
     image: `${Shorts}`,
     size: "XXS, XS, S, M, L, XL, XXL",
+    color: ["#C6C5BD", "#E3F2F2", "#E7ECC8", "#6A6A6A"],
     stock: 2090,
   },
   {
@@ -31,6 +33,7 @@ export const products = [
     price: 5490,
     image: `${Top}`,
     size: "XXS, XS, S, M, L, XL, XXL",
+    color: ["#EE1616", "#221EE7", "#E6EFFB", "#506177"],
     stock: 2090,
   },
   {
