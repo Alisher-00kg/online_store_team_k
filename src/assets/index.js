@@ -33,6 +33,7 @@ import Plus from "./icons/plus.svg?react";
 import Minus from "./icons/minus.svg?react";
 import Beige from "./icons/beige.svg?react";
 import Blue from "./icons/blue.svg?react";
+import BrandNameSecond from "./icons/BrandNameSecond.svg?react";
 
 export const Icons = {
   ArrowBottom,
@@ -63,4 +64,5 @@ export const Icons = {
   Minus,
   Beige,
   Blue,
+  BrandNameSecond,
 };
