@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Footer = () => {
   return (
     <StyleFooter>
-      <StyledDiv style={{ width: "100%", height: "246px" }}>
+      <StyledDiv style={{ height: "246px" }}>
         <h1>BRANDNAME</h1>
         <StyledText>
           <p>О нас</p>
@@ -27,35 +27,15 @@ export const Footer = () => {
         <p>Все права защищены</p>
       </StyledDiv>
       <StyledDiv style={{ gap: "0px" }}>
-        <StyledDiv
-          style={{
-            gap: "154px",
-            backgroundColor: "#F2ED72",
-            height: "82px",
-            width: "100%",
-            borderWidth: "4px 2px 0px 0px",
-            borderStyle: "solid",
-            borderColor: "#2E2E2E",
-          }}
-        >
+        <YellowBar>
           <h2>WELCOME TO OUR PROJECT</h2>
           <h2>ONLINESHOP</h2>
-        </StyledDiv>
-        <StyledDiv
-          style={{
-            gap: "40px",
-            backgroundColor: "#30723F",
-            height: "82px",
-            width: "100%",
-            borderWidth: "4px 0px 0px 2px",
-            borderStyle: "solid",
-            borderColor: "#2E2E2E",
-          }}
-        >
+        </YellowBar>
+        <GreenBar>
           <h2>JS-5 SILA</h2>
           <h2>SALAM JS-5</h2>
           <h2>GET OUT</h2>
-        </StyledDiv>
+        </GreenBar>
       </StyledDiv>
     </StyleFooter>
   );
@@ -67,6 +47,7 @@ const StyleFooter = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top: 2px solid black;
 `;
 
 const StyledDiv = styled.div`
@@ -81,4 +62,24 @@ const StyledText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 18px;
+`;
+
+const YellowBar = styled(StyledDiv)`
+  gap: 154px;
+  background-color: #f2ed72;
+  height: 82px;
+  width: 100%;
+  border-width: 4px 2px 0px 0px;
+  border-style: solid;
+  border-color: #2e2e2e;
+`;
+
+const GreenBar = styled(StyledDiv)`
+  gap: 40px;
+  background-color: #30723f;
+  height: 82px;
+  width: 100%;
+  border-width: 4px 0px 0px 2px;
+  border-style: solid;
+  border-color: #2e2e2e;
 `;
