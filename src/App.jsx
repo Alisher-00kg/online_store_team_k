@@ -1,5 +1,11 @@
+import { SingUp } from "./auth/SingUp";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <SingUp />
+    </div>
+  );
 };
 
 export default App;
