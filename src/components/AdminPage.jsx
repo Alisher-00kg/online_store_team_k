@@ -19,26 +19,23 @@ const AdminPage = () => {
     <>
       <Container>
         <LeftTab>
-          <br />
-          <br />
           <BrandName>
             <Icons.BrandNameSecond />
           </BrandName>
-          <br />
-          <br />
-          <br />
-          <NavButtons to="/admin/male">
-            <Icons.Man />
-            Мужская
-          </NavButtons>
-          <NavButtons to="/admin/female">
-            <Icons.Woman />
-            Женская
-          </NavButtons>
-          <NavButtons to="/admin/children">
-            <Icons.Kid />
-            Детская
-          </NavButtons>
+          <ContainerButtons>
+            <NavButtons to="/admin/male">
+              <Icons.Man />
+              Мужская
+            </NavButtons>
+            <NavButtons to="/admin/female">
+              <Icons.Woman />
+              Женская
+            </NavButtons>
+            <NavButtons to="/admin/children">
+              <Icons.Kid />
+              Детская
+            </NavButtons>
+          </ContainerButtons>
         </LeftTab>
         <Main>
           <Header>
@@ -53,9 +50,12 @@ const AdminPage = () => {
 
 export default AdminPage;
 
+const ContainerButtons = styled.div``;
+
 const BrandName = styled.div`
   border: none;
   padding: 10px;
+  padding-top: 50px;
 `;
 
 const Container = styled.div`
@@ -69,6 +69,7 @@ const LeftTab = styled.div`
   background: #ffffff;
   display: flex;
   flex-direction: column;
+  gap: 70px;
 `;
 
 const Main = styled.div`
