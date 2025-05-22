@@ -20,7 +20,7 @@ const AdminPage = () => {
       <Container>
         <LeftTab>
           <BrandName>
-            <Icons.BrandNameSecond />
+            <Icons.logo />
           </BrandName>
           <ContainerButtons>
             <NavButtons to="/admin/male">
