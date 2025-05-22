@@ -124,6 +124,7 @@ const StyledContainerButtons = styled.div`
 const StyledInternalContainer = styled.div`
   display: flex;
   align-items: center;
+  
   .lastButton {
     color: #30723f;
   }
