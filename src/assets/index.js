@@ -34,7 +34,6 @@ import Minus from "./icons/minus.svg?react";
 import Beige from "./icons/beige.svg?react";
 import Blue from "./icons/blue.svg?react";
 import BrandNameSecond from "./icons/BrandNameSecond.svg?react";
-import { svgIconClasses } from "@mui/material";
 
 export const Icons = {
   ArrowBottom,
@@ -67,4 +66,3 @@ export const Icons = {
   Blue,
   BrandNameSecond,
 };
-  
