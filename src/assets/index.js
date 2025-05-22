@@ -33,6 +33,7 @@ import Plus from "./icons/plus.svg?react";
 import Minus from "./icons/minus.svg?react";
 import Beige from "./icons/beige.svg?react";
 import Blue from "./icons/blue.svg?react";
+import IconFooter from "./icons/iconFooter.svg?react";
 import Logo from "./icons/logo.svg?react";
 import Visibility from "./icons/visibility.svg?react";
 import EyeOff from "./icons/eye-off-svgrepo-com.svg?react";
@@ -66,6 +67,7 @@ export const Icons = {
   Minus,
   Beige,
   Blue,
+  IconFooter,
   Logo,
   Visibility,
   EyeOff,
