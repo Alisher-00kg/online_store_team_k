@@ -6,6 +6,8 @@ import styled from "styled-components";
 import validationSchema from "../utils/errorComponents";
 import Buttons from "../components/UI/Buttons";
 import IconButtons from "../components/UI/IconButtons";
+import Visibility from "@mui/icons-material/Visibility";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
 
 const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -34,7 +36,7 @@ const SignIn = () => {
         <InputWrapper>
           <Input
             label="Логин"
-            name="Логин"
+            name="email"
             value={formik.values.email}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -56,9 +58,9 @@ const SignIn = () => {
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
-                  <IconButtons
-                    onClick={() => setShowPassword((prev) => !prev)}
-                  ></IconButtons>
+                  <IconButtons onClick={() => setShowPassword((prev) => !prev)}>
+                    {showPassword ? <VisibilityOff /> : <Visibility />}
+                  </IconButtons>
                 </InputAdornment>
               ),
             }}
@@ -82,6 +84,7 @@ const SignIn = () => {
 };
 
 export default SignIn;
+
 const ErrorText = styled.span`
   color: red;
   font-size: 12px;
@@ -115,6 +118,7 @@ const StyledForm = styled.form`
 const StyledContainerButtton = styled.div`
   margin-top: 32px;
   color: #fafafa;
+
   button {
     width: 100%;
     max-width: 445px;
@@ -134,13 +138,14 @@ const Continer = styled.div`
   gap: 12px;
   font-size: 14px;
   color: #6a6a6a;
+
   p {
     margin: 0;
     cursor: pointer;
     color: #121314;
     text-decoration: underline;
-    text-decoration: none;
     display: flex;
+    text-decoration: none;
   }
 `;
 
