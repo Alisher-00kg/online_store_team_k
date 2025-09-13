@@ -1,7 +1,7 @@
 import React from "react";
 import { TextField, styled } from "@mui/material";
 
-export const Input = ({
+const Input = ({
   value,
   onChange,
   name,
@@ -25,7 +25,7 @@ export const Input = ({
     />
   );
 };
-
+export default Input;
 const StyledInput = styled(TextField)(() => ({
   "& .MuiOutlinedInput-root": {
     backgroundColor: "#fff",
